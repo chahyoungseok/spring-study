@@ -11,6 +11,8 @@
     <li><a href="#Lombok과-Refactoring">Lombok과 Refactoring</a></li>
     <li><a href="#Data-Create">Data Create</a></li>
     <li><a href="#Data-Read">Data Read</a></li>
+    <li><a href="#Data-Update">Data Update</a></li>
+    <li><a href="#Data-Delete">Data Delete</a></li>
   </ol>
 </details>
 
@@ -86,3 +88,12 @@ build.gradle에
   - Iterable 타입을 수정하고 싶다면 CrudRepository를 상속받은 인터페이스로가 CrudRepository에 find 메서드들을 오버라이딩을 하여 원하는 타입으로 바꿔줍니다.
   - 해당 프로젝트에선 ArrayList로 오버라이딩 반환타입을 수정했고, List의 하위타입인 ArrayList의 특성을 고려하여 List 타입으로 데이터를 받았습니다.
   - 가져온 데이터는 Model에 등록하여 View에 전달하였고, {{#전달한 데이터}} {{/전달한 데이터}}와 같이 범위를 지정하여 데이터를 사용했습니다.
+
+<br>
+
+## Data Update
+  - Data Create를 할 때, 사용하였던 save는 save할 Entity의 id가 이미 DB에 있다면 갱신을 하는 역할을 합니다.
+
+<br>
+
+## Data Delete
