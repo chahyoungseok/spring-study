@@ -98,7 +98,10 @@ build.gradle에
 <br>
 
 ## Data Delete
+  - 해당하는 id를 DB에서 찾아 Entity를 반환받고, 반환받은 Entity를 통해 Delete합니다.
+  - RedirectAttributes을 통해 Flash한 데이터를 추가하고, redirect되는 View에 alert로 메시지를 띄워줄 수 도 있습니다.
 
+<br>
 
 ## 아쉬운 점
  - MVC 모델의 단점이 명확하게 눈이 띄입니다. View와 Model의 의존도가 정말 높고, 코드가 많아지면 많아질수록 복잡도가 급격히 늘어납니다.
