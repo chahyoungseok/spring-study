@@ -9,6 +9,7 @@
     <li><a href="#DTO-Entity">DTO Entity</a></li>
     <li><a href="#Database-접근">Database-접근</a></li>
     <li><a href="#Lombok과-Refactoring">Lombok과 Refactoring</a></li>
+    <li><a href="#Data-Create">Data Create</a></li>
     <li><a href="#Data-Read">Data Read</a></li>
     <li><a href="#day-7">Day 7</a></li>
     <li><a href="#day-8">Day 8</a></li>
@@ -77,4 +78,15 @@ build.gradle에
 
 <br>
 
+## Data Create
+  - View에서 받은 데이터는 DTO를 거쳐 Entity로 Casting 됩니다.
+  - CrudRepository를 이용하여 Entity를 save합니다.
+  - 이때 CrudRepository를 상속받은 인터페이스는 따로 객체를 만들지 않고, Autowired Anotation을 통해 Spring boot가 미리 생성해놓은 객체를 연결합니다.
+
+<br>
+
 ## Data Read
+  - CrudRepository를 상속받은 인터페이스를 통해 find하여 Data를 얻습니다. 이때 반환타입은 Iterable입니다.
+  - Iterable 타입을 수정하고 싶다면 CrudRepository를 상속받은 인터페이스로가 CrudRepository에 find 메서드들을 오버라이딩을 하여 원하는 타입으로 바꿔줍니다.
+  - 해당 프로젝트에선 ArrayList로 오버라이딩 반환타입을 수정했고, List의 하위타입인 ArrayList의 특성을 고려하여 List 타입으로 데이터를 받았습니다.
+  - 가져온 데이터는 Model에 등록하여 View에 전달하였고, {{#전달한 데이터}} {{/전달한 데이터}}와 같이 범위를 지정하여 데이터를 사용했습니다.
