@@ -9,7 +9,7 @@
     <li><a href="#DTO-Entity">DTO Entity</a></li>
     <li><a href="#Database-접근">Database-접근</a></li>
     <li><a href="#Lombok과-Refactoring">Lombok과 Refactoring</a></li>
-    <li><a href="#Data-View에-띄워주기(Read)">Data View에 띄워주기(Read)</a></li>
+    <li><a href="#Data-Read">Data Read</a></li>
     <li><a href="#day-7">Day 7</a></li>
     <li><a href="#day-8">Day 8</a></li>
     <li><a href="#day-9">Day 9</a></li>
@@ -77,4 +77,4 @@ build.gradle에
 
 <br>
 
-## Data View에 띄워주기(Read)
+## Data Read
