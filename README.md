@@ -102,4 +102,4 @@ build.gradle에
 
 ## 아쉬운 점
  - MVC 모델의 단점이 명확하게 눈이 띄입니다. View와 Model의 의존도가 정말 높고, 코드가 많아지면 많아질수록 복잡도가 급격히 늘어납니다.
- - form 형식의 데이터 입력은 GET, POST 방식밖에 보낼 수 없어 CRUD에서 UPDATE, DELETE 방식으로 데이터 전달을 하지 못 하였습니다.
+ - html form 형식의 데이터 입력은 GET, POST 방식밖에 보낼 수 없어 CRUD에서 UPDATE, DELETE 방식으로 데이터 전달을 하지 못 하였습니다.
