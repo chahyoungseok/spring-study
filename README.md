@@ -11,10 +11,6 @@
     <li><a href="#Lombok과-Refactoring">Lombok과 Refactoring</a></li>
     <li><a href="#Data-Create">Data Create</a></li>
     <li><a href="#Data-Read">Data Read</a></li>
-    <li><a href="#day-7">Day 7</a></li>
-    <li><a href="#day-8">Day 8</a></li>
-    <li><a href="#day-9">Day 9</a></li>
-    <li><a href="#day-10">Day 10</a></li>
   </ol>
 </details>
 
