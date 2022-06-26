@@ -13,6 +13,7 @@
     <li><a href="#Data-Read">Data Read</a></li>
     <li><a href="#Data-Update">Data Update</a></li>
     <li><a href="#Data-Delete">Data Delete</a></li>
+    <li><a href="#Rest-API">Rest API</a></li>
     <li><a href="#아쉬운-점">아쉬운 점</a></li>
   </ol>
 </details>
@@ -100,6 +101,15 @@ build.gradle에
 ## Data Delete
   - 해당하는 id를 DB에서 찾아 Entity를 반환받고, 반환받은 Entity를 통해 Delete합니다.
   - RedirectAttributes을 통해 Flash한 데이터를 추가하고, redirect되는 View에 alert로 메시지를 띄워줄 수 도 있습니다.
+
+<br>
+
+## Rest API
+  - 다양한 Client들이 나오면서 브라우저는 그에 맞는 적절한 응답을 해주어야합니다. 이를 해결하기위해 Rest Api가 등장하였습니다.
+  - Rest Api란 웹서버의 자원을 클라이언트에게 구애받지 않고 사용할 수 있게 만드는 설계방식
+  - Http를 통해 서버의 자원을 다루게하는 기술
+  - 이때 서버는 응답으로 View가 아닌 Data(json)만을 전달합니다. 
+
 
 <br>
 
