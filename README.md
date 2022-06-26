@@ -124,6 +124,7 @@ build.gradle에
   - 만일 실패를 한다면 진행초기단계로 돌리는데 이를 Rollback이라 합니다.
   - 따라서 Controller에 있던 코드를 Service를 만들어 분업화 합니다.
   - Controller안에서 Repository에 접근한다면 그것은 Service코드로 Refactoring합니다.
+  - Service에서 Transaction을 처리하는 메서드에 @Transactional Anotation을 설정해주면 중간에 에러가 나도 Rollback 시켜줍니다.
 
 <br>
 
