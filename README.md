@@ -111,9 +111,10 @@ build.gradle에
   - 이때 서버는 응답으로 View가 아닌 Data(json)만을 전달합니다. 
   - 따라서 ApiController라는 Controller를 새로 만들어 기존 View Template을 반환하던 Controller와는 다르게 Data만을 반환하는 코드를 작성합니다.
   - 추가) spring boot 2.7.0 에서 Unique index or primary key violation 에러가 생겼습니다. build.gradle 에서 2.6.7 로 낮추니 동작합니다.
+  - html form에서는 GET, POST 방식밖에 전송하지 못하지만 Rest api를 설계하므로 GET, POST, PATCH, DELETE 방식의 전송처리도 하였습니다.
+  - 반환타입은 Data이고 ResponseEntity를 통해 200, 400등 상태를 반환하였습니다.
  
 <br>
 
 ## 아쉬운 점
  - MVC 모델의 단점이 명확하게 눈이 띄입니다. View와 Model의 의존도가 정말 높고, 코드가 많아지면 많아질수록 복잡도가 급격히 늘어납니다.
- - html form 형식의 데이터 입력은 GET, POST 방식밖에 보낼 수 없어 CRUD에서 UPDATE, DELETE 방식으로 데이터 전달을 하지 못 하였습니다.
