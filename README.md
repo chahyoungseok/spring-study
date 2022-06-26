@@ -109,7 +109,7 @@ build.gradle에
   - Rest Api란 웹서버의 자원을 클라이언트에게 구애받지 않고 사용할 수 있게 만드는 설계방식
   - Http를 통해 서버의 자원을 다루게하는 기술
   - 이때 서버는 응답으로 View가 아닌 Data(json)만을 전달합니다. 
-
+  - 따라서 ApiController라는 Controller를 새로 만들어 기존 View Template을 반환하던 Controller와는 다르게 Data만을 반환하는 코드를 작성합니다.
 
 <br>
 
