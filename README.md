@@ -14,6 +14,7 @@
     <li><a href="#Data-Update">Data Update</a></li>
     <li><a href="#Data-Delete">Data Delete</a></li>
     <li><a href="#Rest-API">Rest API</a></li>
+    <li><a href="#Service">Service</a></li>
     <li><a href="#아쉬운-점">아쉬운 점</a></li>
   </ol>
 </details>
@@ -114,6 +115,16 @@ build.gradle에
   - html form에서는 GET, POST 방식밖에 전송하지 못하지만 Rest api를 설계하므로 GET, POST, PATCH, DELETE 방식의 전송처리도 하였습니다.
   - 반환타입은 Data이고 ResponseEntity를 통해 200, 400등 상태를 반환하였습니다.
  
+<br>
+
+## Service
+  - Service는 Controller와 Repository 사이에서 처리업무의 순서를 결정하는 역할을 합니다.
+  - 이때 Service의 처리업무는 Transaction 단위로 이루어집니다.
+  - Transaction이란 모두 성공되어야하는 일련의 과정을 말합니다.
+  - 만일 실패를 한다면 진행초기단계로 돌리는데 이를 Rollback이라 합니다.
+  - 따라서 Controller에 있던 코드를 Service를 만들어 분업화 합니다.
+  - Controller안에서 Repository에 접근한다면 그것은 Service코드로 Refactoring합니다.
+
 <br>
 
 ## 아쉬운 점
